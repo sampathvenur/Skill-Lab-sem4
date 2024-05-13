@@ -1,0 +1,27 @@
+.poppins-thin {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.form-label {
+color: gray;
+font-family: "poppins", sans-serif;
+font-weight: 600;
+}
+
+.emaildiv {
+    margin-bottom: 40px;
+}
+
+#exampleFormControlInput1, #exampleFormControlTextarea1 {
+    padding: 6px 200px 6px 6px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
