@@ -1,0 +1,13 @@
+npm i express - install express
+npm node init -y -> install node
+
+POST : Create
+GET : Read
+PUT/PATCH : Delete
+
+Database connect: {
+npm i nodemon : mongodb
+npx nodemon index.js
+}
+
+#mongoose:
