@@ -4,10 +4,20 @@ let createStudent = async function(req, res) {
     try {
         let data = req.body;
         let result = await Student.create(data);
-        res.json({ msg: "Student data created", data: result });
+        res.send({data : result});
     } catch (error) {
-        res.status(500).json({ msg: "Error creating student", error: error.message });
+        res.status(500).json({error: error.message });
     }
 };
 
-module.exports = {createStudent};
+const getAllStudents = async (req, res) => {
+    try {
+        let students = await Student.find();
+        res.send({mag : "Student Details", students});
+    }
+    catch (error) {
+        res.status(500).send({msg : "Error fetching students", error: error.message});
+    }
+}
+
+module.exports = {createStudent, getAllStudents}
