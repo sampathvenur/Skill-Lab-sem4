@@ -1,6 +1,6 @@
 const { Student } = require('../model/student');
 
-let createStudent = async function (req, res) {
+let createStudent = async function(req, res) {
     try {
         let data = req.body;
         let result = await Student.create(data);
@@ -10,4 +10,4 @@ let createStudent = async function (req, res) {
     }
 };
 
-module.exports = { createStudent };
+module.exports = {createStudent};

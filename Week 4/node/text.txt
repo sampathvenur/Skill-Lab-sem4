@@ -1,9 +1,20 @@
+## Node Instructions :-
+#  Modules :
+1. Core Modules
+2. Local Modules
+3. Third-Party Modules
+
+# MVC Pattern : Model View Controller
+
 npm i express - install express
 npm node init -y -> install node
 
+CRUD : Create - Read - Update - Delete
+# HTTP Methods :
 POST : Create
 GET : Read
-PUT/PATCH : Delete
+PUT/PATCH : Update
+DELETE : Delete
 
 Database connect: {
 npm i nodemon : mongodb
@@ -11,3 +22,11 @@ npx nodemon index.js
 }
 
 #mongoose:
+1. connection btw mongodb and node
+2. used to create schema and Mode 1
+
+=> node js is a run time environment, not a module or framework.
+=> schema - Data is structure format
+
+
+run npx nodemon index.js
