@@ -30,3 +30,5 @@ npx nodemon index.js
 
 
 run - npx nodemon index.js
+
+to download web token => npm i jsonwebtoken
