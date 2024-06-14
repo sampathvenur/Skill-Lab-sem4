@@ -16,6 +16,6 @@ const feedbackSchema = new mongoose.Schema({
         type: String
     },
 })
-const Student = mongoose.model('feedback', feedbackSchema);
+const msg = mongoose.model('feedback', feedbackSchema);
 
-module.exports = { Student };
+module.exports = { msg };
