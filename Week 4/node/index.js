@@ -8,12 +8,12 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-mongoose.connect("mongodb+srv://sampathkumarvenur:sampath%40mongodb@cluster0.bm5sgxo.mongodb.net/mydb", { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect("mongodb+srv://sampathkumarvenur:sampath%40mongodb@cluster0.bm5sgxo.mongodb.net/mydb")
     .then(() => {
         console.log("Database Connected!!");
     })
     .catch((err) => {
-        console.log(err.message);
+        console.log('MongoDB connection error:', err.message);
     });
 
 app.use('/', route);
