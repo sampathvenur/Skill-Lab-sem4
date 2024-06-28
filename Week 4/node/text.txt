@@ -34,3 +34,16 @@ run - npx nodemon index.js
 to download web token => npm i jsonwebtoken
 
 asynchronous: process which takes less time to execute is executed first
+
+jwt: json web token
+3 parts: Header, Payload(information for identification of a user), Secret Key (kindof Password)
+2 functions: sign(), verify()
+sign() => 
+-> To Generate Token
+-> contains payload and secret key
+
+middleware has 3 parameters => req, res, next
+req => middleware function() <= res
+
+verify() =>
+-> contains token and secret key
