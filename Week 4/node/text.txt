@@ -32,3 +32,5 @@ npx nodemon index.js
 run - npx nodemon index.js
 
 to download web token => npm i jsonwebtoken
+
+asynchronous: process which takes less time to execute is executed first
